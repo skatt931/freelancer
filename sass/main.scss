@@ -1,3 +1,70 @@
+@import 'variables';
+@import 'mixins';
+@font-face {
+	font-family: "Roboto"; 
+    src: url(../fonts/RobotoRegular/RobotoRegular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: $main-color;
+	&:hover {
+		color: $main-color-lighter;
+	}
+}
+
 body {
-	background-color: green;
+	background: $white;
+	color: $black-text;
+	font: 18px 300/24px "Roboto";
+	min-width: 317px;
+}
+.red {
+	color: $main-color;
+}
+.logo {
+	width: 105px;
+	height: 55px;
+	background-color: $main-color;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	text-align: center;
+	padding: 20px 0 0 0;
+	a {
+		color: $white;
+		font-size: 19px;
+		span {
+			color: $black-text;	
+		} 
+	}
+}
+.navbar-btn {
+	span {
+		color: $main-color;
+		font-size: 25px;
+	}
+}
+.navbar {
+	min-height: 0;
+	margin-bottom: 0;
+}
+//BIG IMAGE
+#big-image {
+	background: url(../img/Hero%20Image.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 250px;
+	h1 {
+		font-size: 25px;
+		line-height: 35px;
+		color: $black-text;
+		font-weight: bold;
+		margin: 40px 0 0 0;
+		+ p {
+			font-size: 15px;
+		}
+	}
 }
