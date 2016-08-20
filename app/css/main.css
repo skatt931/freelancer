@@ -1,2 +1,57 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/RobotoRegular/RobotoRegular.ttf); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: #fa5c65; }
+  a:hover {
+    color: #f0525b; }
+
 body {
-  background-color: green; }
+  background: #fff;
+  color: #425968;
+  font: 18px 300/24px "Roboto";
+  min-width: 317px; }
+
+.red {
+  color: #fa5c65; }
+
+.logo {
+  width: 105px;
+  height: 55px;
+  background-color: #fa5c65;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+  padding: 20px 0 0 0; }
+  .logo a {
+    color: #fff;
+    font-size: 19px; }
+    .logo a span {
+      color: #425968; }
+
+.navbar-btn span {
+  color: #fa5c65;
+  font-size: 25px; }
+
+.navbar {
+  min-height: 0;
+  margin-bottom: 0; }
+
+#big-image {
+  background: url(../img/Hero%20Image.png) no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 250px; }
+  #big-image h1 {
+    font-size: 25px;
+    line-height: 35px;
+    color: #425968;
+    font-weight: bold;
+    margin: 40px 0 0 0; }
+    #big-image h1 + p {
+      font-size: 15px; }
