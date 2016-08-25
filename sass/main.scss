@@ -16,7 +16,7 @@ a {
 	}
 }
 h3 {
-	margin: 60px 0 20px 0;
+	margin: 40px 0 20px 0;
 }
 
 body {
@@ -25,15 +25,15 @@ body {
 	font: 18px 300/24px "Roboto";
 	min-width: 317px;
 }
+header {
+	padding: 0;
+	margin: 0;
+}
 p {
 	color: $gray-text;
 }
 .red {
 	color: $main-color;
-}
-.inline {
-	display: inline-block;
-	width: 160px;
 }
 .glyphicon-align-justify {
 	font-size: 12px;
@@ -67,10 +67,11 @@ p {
 }
 //BIG IMAGE
 #big-image {
-	background: url(../img/Hero%20Image.png) no-repeat;
+	background: url(../img/Photo.png) no-repeat;
 	background-position: top;
 	background-size: cover;
 	height: 260px;
+	margin: 0;
 	h1 {
 		font-size: 1.25em;
 		line-height: 35px;
@@ -83,8 +84,71 @@ p {
 			color: $black-text;
 		}
 	}
+	.btn-danger {
+		background-color: $main-color;
+		border-color: $main-color;
+	}
 }
 strong {
 	font-weight: 700;
+	color:$black-text;
 }
+//Portfolio
+macB {
+	width: 355px;
+}
+.portfolio {
+	font-size: 40px;
+	text-align: center;
+}
+
+//OUR TEAM
+.team {
+	border-bottom: 1px solid $gray-text;
+	padding-bottom: 60px;
+	margin-top: 60px;
+	h2 {
+		text-align: center;
+		+p {
+			text-align: center;
+			font-size: 16px;
+		}
+	}
+	.joey,.matt,.mike {
+		margin: 50px 0 0 0;
+		img {
+			max-width: 150px;
+		}
+	}
+	a {
+		i {
+			margin: 30px 0 0 0;
+		}
+	}
+}
+//FOOTER
+.footer {
+	padding: 20px 15px 20px 15px;
+	color: $gray-text;
+	.row {
+		div {
+			div {
+				i {
+					font-size: 40px;
+				}
+			}
+		}
+	}
+	i:hover {
+		color: $main-color;
+	}
+	.copiwrite {
+		margin: 20px 0 0 0;
+		font-size: 14px;
+	}
+}
+
+@import 'media';
+
+
 

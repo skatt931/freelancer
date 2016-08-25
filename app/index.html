@@ -20,6 +20,8 @@
 	
 	<!--CSS-->
 	<link rel="stylesheet" href="css/main.css">
+	
+	<script src="https://use.fontawesome.com/95fe7ab082.js"></script>
 </head>
 <body>
 	
@@ -27,7 +29,7 @@
 	<header>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-5">
+				<div class="col-xs-5 visible-xs-block">
 					<div class='logo'><a href="#">Freelancer<span>.</span></a></div>
 				</div>
 				
@@ -35,7 +37,7 @@
 					<span class="glyphicon glyphicon-align-justify"></span>
 				</button>
 			</div>
-			<nav class="row navbar navbar-default text-uppercase navbar2 visible-xs-block" role="navigation">
+			<nav class="row navbar navbar-default text-uppercase navbar2" role="navigation">
 				<div class="container">
 					<div class="collapse navbar-collapse" id="main-nav">
 						<ul class="nav navbar-nav">
@@ -43,6 +45,8 @@
 							<li><a href="#">WORK</a></li>
 							<li><a href="#">PORTFOLIO</a></li>
 							<li><a href="#">CONTACT</a></li>
+							<li class="hidden-xs"><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li class="hidden-xs"><a href="#"><i class="fa fa-facebook"></i></a></li>
 						</ul>
 					</div>
 				</div>
@@ -51,6 +55,11 @@
 		<div class="jumbotron" id="big-image">
 			<div class="container">
 				<div class="row">
+					<div class="col-xs-5 hidden-xs">
+						<div class='logo'><a href="#">Freelancer<span>.</span></a></div>
+					</div>
+					
+					
 					<h1 class="text-uppercase">intelligence is nothing without ambition<span class="red">.</span></h1>
 					<p>We’re small but impressive creative agency.</p>
 					<button type="button" class="btn btn-danger">READ MORE</button>
@@ -63,18 +72,28 @@
 	<!--INFO BLOCK-->
 	<div class="container info-block">
 		<div class="row">
-			<div class="col-xs-11">
-				<h3 class="text-uppercase"><strong>Pace <br> of mind<span class="red">.</span></strong></h3>
-				<p>You’re safe with us. The privacy and security of your financial information is our top priority.</p>
-				<a href="#">MORE <i class="glyphicon glyphicon-arrow-right"></i></a>
+			<div class="col-xs-12">
 				
-				<h3 class="text-uppercase"><strong>Free<span class="red">.</span><br>Actually free</strong></h3>
-				<p>No more pricing grids. No more fine print. Sending and receiving cash is free without gimmicks.</p>
-				<a href="#">MORE <i class="glyphicon glyphicon-arrow-right"></i></a>
+				<div class="row">
+					<div class="col-xs-11 col-sm-4">
+						<h3 class="text-uppercase"><strong>Pace <br> of mind<span class="red">.</span></strong></h3>
+						<p>You’re safe with us. The privacy and security of your financial information is our top priority.</p>
+						<a href="#">MORE <i class="glyphicon glyphicon-arrow-right"></i></a>
+					</div>
 				
-				<h3 class="text-uppercase"><strong>Simple <br> payments<span class="red">.</span></strong></h3>
-				<p>The same debit card you use to buy coffee lets deposit money straight to your bank account.</p>
-				<a href="#">MORE <i class="glyphicon glyphicon-arrow-right"></i></a>
+					<div class="col-xs-11 col-sm-4">
+						<h3 class="text-uppercase"><strong>Free<span class="red">.</span><br>Actually free</strong></h3>
+						<p>No more pricing grids. No more fine print. Sending and receiving cash is free without gimmicks.</p>
+						<a href="#">MORE <i class="glyphicon glyphicon-arrow-right"></i></a>
+					</div>
+				
+					<div class="col-xs-11 col-sm-4">
+						<h3 class="text-uppercase"><strong>Simple <br> payments<span class="red">.</span></strong></h3>
+						<p>The same debit card you use to buy coffee lets deposit money straight to your bank account.</p>
+						<a href="#">MORE <i class="glyphicon glyphicon-arrow-right"></i></a>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -84,16 +103,31 @@
 	
 	<!--PORTFOLIO-->
 		
-		<div class="container-fluid">
+		<div class="container-fluid visible-xs-block">
 			<div class="row">
 				<img src="img/MacBook.png" alt="mackbook">
 			</div>
 		</div>
 		
-		<div class="container">
+		<div class="container hidden-xs container-portfolio">
+			<div class="row">
+				<img src="img/MacBook.png" alt="mackbook" class="col-sm-5">
+				
+				<div class="col-xs-12 col-sm-5 col-sm-offset-1">
+					<h2 class="text-uppercase portfolio"><strong>Portfolio<span class="red">.</span></strong></h2>
+					<p><strong>We are smal, but strong team</strong></p>
+					<p>No more pricing grids. No more fine print. Sending and receiving cash is free without gimmicks.</p>
+					<p>The same debit card you use to buy coffee lets deposit money straight to your bank account.</p>
+					<a href="#">MORE <i class="glyphicon glyphicon-arrow-right"></i></a>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div class="container visible-xs-block">
 			<div class="row">
 				<div class="col-xs-12">
-					<h2 class="text-uppercase"><strong>Portfolio<span class="red">.</span></strong></h2>
+					<h2 class="text-uppercase portfolio"><strong>Portfolio<span class="red">.</span></strong></h2>
 					<p><strong>We are smal, but strong team</strong></p>
 					<p>No more pricing grids. No more fine print. Sending and receiving cash is free without gimmicks.</p>
 					<p>The same debit card you use to buy coffee lets deposit money straight to your bank account.</p>
@@ -106,40 +140,44 @@
 	
 	<!--OUR TEAM-->
 	
-	<div class="container">
+	<div class="container team">
 		<div class="row">
 			<div class="col-xs-12">
+			
 				<h2 class="text-uppercase"><strong>Our team<span class="red">.</span></strong></h2>
 				<p>They are big but still friendly.</p>
 				
-				<div class="joey">
-					<img src="img/Photo1.png" alt="Joey">
-					<div class="inline">
-						<h3><strong>JOEY</strong></h3>
-						<p class="red">Web developer</p>
-						<p>Coffee lover. Always on bike. iPhone fun.</p>
+				<div class="row">
+					<div class="joey col-xs-12 col-sm-4">
+						<img src="img/Photo1.png" alt="Joey" class="col-xs-5">
+						<div class="inline col-xs-7">
+							<h4><strong>JOEY</strong></h4>
+							<p class="red">Web developer</p>
+							<p>Coffee lover. Always on bike. iPhone fun.</p>
+						</div>
+					</div>
+				
+					<div class="matt col-xs-12 col-sm-4">
+						<img src="img/Photo2.png" alt="Matt" class="col-xs-5">
+						<div class="inline col-xs-7">
+							<h4><strong>MATT</strong></h4>
+							<p class="red">Web designer</p>
+							<p>MTB Biker. Photoshop master. Loving father.</p>
+						</div>
+					</div>
+			
+					<div class="mike col-xs-12 col-sm-4">
+						<img src="img/Photo3.png" alt="Mike" class="col-xs-5">
+						<div class="inline col-xs-7">
+							<h4><strong>MIKE</strong></h4>
+							<p class="red">Copywriter</p>
+							<p>Drummer. Soup lover. Beer Drinker. Cyclist.</p>
+							
+							<a href="#">MORE <i class="glyphicon glyphicon-arrow-right"></i></a>
+						</div>
 					</div>
 				</div>
 				
-				<div class="matt">
-					<img src="img/Photo2.png" alt="Matt">
-					<div class="inline">
-						<h3><strong>MATT</strong></h3>
-						<p class="red">Web designer</p>
-						<p>MTB Biker. Photoshop master. Loving father.</p>
-					</div>
-				</div>
-				
-				<div class="mike">
-					<img src="img/Photo3.png" alt="Mike">
-					<div class="inline">
-						<h3><strong>MIKE</strong></h3>
-						<p class="red">Copywriter</p>
-						<p>Drummer. Soup lover. Beer Drinker. Cyclist.</p>
-					</div>
-				</div>
-				
-				<a href="#">MORE <i class="glyphicon glyphicon-arrow-right"></i></a>
 			</div>
 		</div>
 	</div>
@@ -147,7 +185,23 @@
 	
 	<!--/OUR TEAM-->
 
-	<footer></footer>
+	<!--FOOTER-->
+	<footer class="container footer">
+		<div class="row">
+			<div class="col-xs-8 col-xs-offset-2 col-sm-3 col-sm-offset-0 social">
+				<div class="row">
+					<i class="fa fa-twitter col-xs-3 col-xs-offset-1 col-sm-2" aria-hidden="true"></i>
+					<i class="fa fa-instagram col-xs-3 col-xs-offset-1 col-sm-2" aria-hidden="true"></i>
+					<i class="fa fa-facebook col-xs-3 col-xs-offset-1 col-sm-2" aria-hidden="true"></i>
+					<i class="fa fa-google-plus hidden-xs col-sm-2 col-sm-offset-1" aria-hidden="true"></i>
+				</div>
+			</div>
+		</div>
+		<div class="row copiwrite">
+			<p class="col-xs-12">&#169; Freelancer - Designed by Ihor Kurnytskyi</p>
+		</div>
+	</footer>
+	<!--/FOOTER-->
 	
 	<!--SCRIPTS-->
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>

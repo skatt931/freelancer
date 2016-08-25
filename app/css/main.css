@@ -12,7 +12,7 @@ a {
     color: #f0525b; }
 
 h3 {
-  margin: 60px 0 20px 0; }
+  margin: 40px 0 20px 0; }
 
 body {
   background: #fff;
@@ -20,15 +20,15 @@ body {
   font: 18px 300/24px "Roboto";
   min-width: 317px; }
 
+header {
+  padding: 0;
+  margin: 0; }
+
 p {
   color: #b5b6b9; }
 
 .red {
   color: #fa5c65; }
-
-.inline {
-  display: inline-block;
-  width: 160px; }
 
 .glyphicon-align-justify {
   font-size: 12px;
@@ -57,10 +57,11 @@ p {
   margin-bottom: 0; }
 
 #big-image {
-  background: url(../img/Hero%20Image.png) no-repeat;
+  background: url(../img/Photo.png) no-repeat;
   background-position: top;
   background-size: cover;
-  height: 260px; }
+  height: 260px;
+  margin: 0; }
   #big-image h1 {
     font-size: 1.25em;
     line-height: 35px;
@@ -71,6 +72,98 @@ p {
     #big-image h1 + p {
       font-size: 15px;
       color: #425968; }
+  #big-image .btn-danger {
+    background-color: #fa5c65;
+    border-color: #fa5c65; }
 
 strong {
-  font-weight: 700; }
+  font-weight: 700;
+  color: #425968; }
+
+macB {
+  width: 355px; }
+
+.portfolio {
+  font-size: 40px;
+  text-align: center; }
+
+.team {
+  border-bottom: 1px solid #b5b6b9;
+  padding-bottom: 60px;
+  margin-top: 60px; }
+  .team h2 {
+    text-align: center; }
+    .team h2 + p {
+      text-align: center;
+      font-size: 16px; }
+  .team .joey, .team .matt, .team .mike {
+    margin: 50px 0 0 0; }
+    .team .joey img, .team .matt img, .team .mike img {
+      max-width: 150px; }
+  .team a i {
+    margin: 30px 0 0 0; }
+
+.footer {
+  padding: 20px 15px 20px 15px;
+  color: #b5b6b9; }
+  .footer .row div div i {
+    font-size: 40px; }
+  .footer i:hover {
+    color: #fa5c65; }
+  .footer .copiwrite {
+    margin: 20px 0 0 0;
+    font-size: 14px; }
+
+@media screen and (min-width: 768px) {
+  .navbar2 {
+    border: none; }
+  #main-nav {
+    position: absolute;
+    background: none;
+    border: none;
+    right: 0; }
+    #main-nav .hidden-xs a {
+      color: #fa5c65; }
+  #big-image {
+    height: 650px;
+    padding-top: 0; }
+    #big-image h1 {
+      font-size: 2.50em;
+      margin: 240px 0 0 0;
+      width: 340px;
+      line-height: 45px; }
+      #big-image h1 + p {
+        font-size: 15px;
+        color: #425968; }
+  .container-portfolio {
+    margin-top: 50px; }
+    .container-portfolio .portfolio {
+      text-align: left; }
+  .team h2 {
+    text-align: left; }
+    .team h2 + p {
+      text-align: left; }
+  .team .joey, .team .matt, .team .mike {
+    margin: 50px 0 0 0; }
+  .team a i {
+    margin: 30px 0 0 0; }
+  .footer {
+    position: relative; }
+    .footer .row div div i {
+      font-size: 25px; }
+    .footer .copiwrite {
+      right: 0;
+      bottom: 10px;
+      position: absolute; } }
+
+@media screen and (min-width: 992px) {
+  #big-image {
+    height: 1050px; }
+    #big-image h1 {
+      font-size: 2.50em;
+      margin: 355px 0 0 0;
+      width: 340px;
+      line-height: 45px; }
+      #big-image h1 + p {
+        font-size: 15px;
+        color: #425968; } }
