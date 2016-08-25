@@ -1,0 +1,86 @@
+@import 'variables';
+
+@media screen and (min-width : 768px) {
+	.navbar2 {
+		border:none;
+	}
+	#main-nav {
+		position: absolute;
+		background: none;
+		border: none;
+		right: 0;
+		.hidden-xs {
+			a {
+				color: $main-color;
+			}
+		}
+	}
+	#big-image {
+		height: 650px;
+		padding-top: 0;
+		h1 {
+			font-size: 2.50em;
+			margin: 240px 0 0 0;
+			width: 340px;
+			line-height: 45px;
+			+ p {
+				font-size: 15px;
+				color: $black-text;
+			}
+		}
+	}
+	.container-portfolio {
+		margin-top: 50px;
+		.portfolio {
+			text-align: left;
+		}
+	}
+	.team {
+		h2 {
+			text-align: left;
+			+p {
+				text-align: left;
+			}
+		}
+		.joey,.matt,.mike {
+			margin: 50px 0 0 0;
+		}
+		a {
+			i {
+				margin: 30px 0 0 0;
+			}
+		}
+	}
+	.footer {
+		position: relative;
+	.row {
+		div {
+			div {
+				i {
+					font-size: 25px;
+				}
+			}
+		}
+	}
+	.copiwrite {
+		right: 0;
+		bottom: 10px;
+		position: absolute;
+	}
+}
+}
+@media screen and (min-width : 992px) {
+	#big-image {
+		height: 1050px;
+		h1 {
+			font-size: 2.50em;
+			margin: 355px 0 0 0;
+			width: 340px;
+			line-height: 45px;
+			+ p {
+				font-size: 15px;
+				color: $black-text;
+			}
+		}
+	}
+}
